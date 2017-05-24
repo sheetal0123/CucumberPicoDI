@@ -12,10 +12,11 @@ public class HomeStepDefs extends BaseUtil {
 		this.base = base;
 	}
 	
-	@Given("^i am on secondmethod$")
-	public void secondmethod() {
+	@Given("^i am testing cucumber dependency injection using pico container$")
+	public void test() {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>. For testing purpose: " + base.picoString);
-		//System.out.println("Driver :" + driver);
-		//driver.get("https://www.google.co.in");
+		
+		System.out.println("Driver :" + driver);
+		driver.get("https://www.google.co.in");
 	}
 }
